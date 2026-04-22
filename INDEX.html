@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <h1 class="logo">Likitha Reddy</h1>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+        <h2>Frontend Developer</h2>
+        <p>I build modern, responsive web experiences.</p>
+
+        <div class="hero-highlights">
+            <div class="highlight">
+                <h3>Skills</h3>
+                <p>HTML, CSS, JS, React</p>
+            </div>
+            <div class="highlight">
+                <h3>Experience</h3>
+                <p>2+ Years</p>
+            </div>
+            <div class="highlight">
+                <h3>Projects</h3>
+                <p>10+ Completed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">React</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section alt fade-in">
+        <h2>Experience</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Frontend Developer</h3>
+                <p>Company XYZ</p>
+            </div>
+            <div class="card">
+                <h3>Junior Developer</h3>
+                <p>Company ABC</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Portfolio</h3>
+                <p>Personal Website</p>
+            </div>
+            <div class="card">
+                <h3>E-commerce</h3>
+                <p>Shopping UI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Likitha Reddy</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav-links");
+
+        toggle.onclick = () => {
+            nav.classList.toggle("active");
+        };
+
+        const themeBtn = document.getElementById("theme-toggle");
+
+        themeBtn.onclick = () => {
+            document.body.classList.toggle("light");
+        };
+    </script>
+
+</body>
+
+</html>
